@@ -13,7 +13,14 @@ class ListItem extends Component {
 		const { title, completed } = this.props;
 		return (
 			<LinearGradient
-				colors={[Color('#000').alpha(0.89), Color('#000').alpha(0.19)]}
+				colors={[
+					Color('#000')
+						.alpha(0.89)
+						.toString(),
+					Color('#000')
+						.alpha(0.19)
+						.toString()
+				]}
 				style={styles.listItem}
 			>
 				<View style={styles.listItemLeftPart}>

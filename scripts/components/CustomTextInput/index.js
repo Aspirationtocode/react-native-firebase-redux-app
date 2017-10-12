@@ -5,7 +5,7 @@ import styles from './styles';
 
 const { width, height } = Dimensions.get('window');
 
-RkTheme.setType('RkTextInput', 'frame', {
+RkTheme.setType('RkTextInput', 'regular', {
 	input: {
 		marginLeft: 0,
 		color: '#fff'
@@ -19,12 +19,24 @@ RkTheme.setType('RkTextInput', 'frame', {
 });
 
 class CustomTextInput extends Component {
+	constructor() {
+		super();
+		this.handleChange = this.handleChange.bind(this);
+	}
+	handleChange(value) {
+		console.log(value);
+	}
 	render() {
+		const { placeholder, type } = this.props;
 		return (
-			<RkTextInput
-				placeholder="Enter task..."
-				rkType="frame"
-				placeholderTextColor="#fff"
+			<TextInput
+				placeholder={placeholder}
+				style={{
+					width: width * 0.55,
+					height: 50
+				}}
+				underlineColorAndroid="#fff"
+				onChangeText={this.handleChange}
 			/>
 		);
 	}

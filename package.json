@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
-    "react-native-scripts": "1.5.0",
     "jest-expo": "^21.0.2",
+    "react-native-scripts": "1.5.0",
     "react-test-renderer": "16.0.0-alpha.12"
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
@@ -22,9 +22,16 @@
     "color": "^2.0.0",
     "color-alpha": "^1.0.2",
     "expo": "^21.0.0",
-    "react": "16.0.0-alpha.12",
+    "firebase": "^4.5.1",
+    "react": "^16.0.0",
     "react-native": "^0.48.4",
     "react-native-linear-gradient": "^2.3.0",
-    "react-native-ui-kitten": "^2.0.1"
-  }
+    "react-native-ui-kitten": "^2.0.1",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0"
+  },
+  "repository": "https://github.com/Aspirationtocode/react-native-firebase-redux-app.git",
+  "author": "Aspirationtocode <aspiretocode@gmail.com>",
+  "license": "MIT"
 }

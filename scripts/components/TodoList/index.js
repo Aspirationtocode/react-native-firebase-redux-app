@@ -12,7 +12,7 @@ class TodoList extends Component {
 				<View style={styles.header}>
 					<Text style={styles.text}>TODO LIST</Text>
 					<View style={styles.headerInnerBottom}>
-						<CustomTextInput />
+						<CustomTextInput placeholder="Enter task..." type="regular" />
 						<CustomButton text="ADD" type="regular" />
 					</View>
 				</View>
