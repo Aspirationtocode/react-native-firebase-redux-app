@@ -24,19 +24,31 @@ class List extends Component {
 	render() {
 		const { todoList } = this.props;
 		const { fetching } = todoList;
-		return fetching ? (
-			<View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-				<ActivityIndicator size="large" color="#BE3333" />
-			</View>
-		) : (
-			<FlatList
-				style={styles.list}
-				data={todoList.data}
-				renderItem={({ item }) => (
-					<ListItem title={item.title} completed={item.completed} />
-				)}
-			/>
-		);
+		if (!todoList.error) {
+			return fetching ? (
+				<View
+					style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}
+				>
+					<ActivityIndicator size="large" color="#BE3333" />
+				</View>
+			) : (
+				<FlatList
+					style={styles.list}
+					data={todoList.data}
+					renderItem={({ item }) => (
+						<ListItem title={item.title} completed={item.completed} />
+					)}
+				/>
+			);
+		} else {
+			return (
+				<View
+					style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}
+				>
+					<Text>TODO list is not there</Text>
+				</View>
+			);
+		}
 	}
 }
 

@@ -1,8 +1,8 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add firebase
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add uniqid
 
 PATH: 
-  C:\Users\aspire\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\aspire\bin;C:\ProgramData\Oracle\Java\javapath;C:\Python27;C:\Python27\Scripts;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin;C:\Users\aspire\AppData\Local\Microsoft\WindowsApps;C:\Users\aspire\AppData\Roaming\npm;C:\Users\aspire\AppData\Local\atom\bin;C:\Users\aspire\AppData\Local\Yarn\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+  C:\Program Files\ConEmu\ConEmu\Scripts;C:\Program Files\ConEmu;C:\Program Files\ConEmu\ConEmu;C:\ProgramData\Oracle\Java\javapath;C:\Python27\;C:\Python27\Scripts;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\ProgramData\chocolatey\bin;C:\Program Files (x86)\Yarn\bin;C:\Users\aspire\AppData\Local\Microsoft\WindowsApps;C:\Users\aspire\AppData\Roaming\npm;C:\Users\aspire\AppData\Local\atom\bin;C:\Users\aspire\AppData\Local\Yarn\bin
 
 Yarn version: 
   1.2.1
@@ -38,6 +38,7 @@ npm manifest:
       "color": "^2.0.0",
       "color-alpha": "^1.0.2",
       "expo": "^21.0.0",
+      "firebase": "^4.5.1",
       "react": "^16.0.0",
       "react-native": "^0.48.4",
       "react-native-linear-gradient": "^2.3.0",
@@ -109,6 +110,53 @@ Lockfile:
     dependencies:
       lodash "^4.17.4"
       react-native-vector-icons "4.1.1"
+  
+  "@firebase/app@0.1.0":
+    version "0.1.0"
+    resolved "https://registry.yarnpkg.com/@firebase/app/-/app-0.1.0.tgz#b18e6dbb218f65dd97f042b3c958d6484aacc449"
+    dependencies:
+      "@firebase/util" "^0.1.0"
+  
+  "@firebase/auth@0.1.0":
+    version "0.1.0"
+    resolved "https://registry.yarnpkg.com/@firebase/auth/-/auth-0.1.0.tgz#f264502cbf48f89e517b6dba8ab24e6c2c1c5c52"
+  
+  "@firebase/database@0.1.0":
+    version "0.1.0"
+    resolved "https://registry.yarnpkg.com/@firebase/database/-/database-0.1.0.tgz#77cedb607585b138bcd7db80ac01a6d9ac0a6002"
+    dependencies:
+      "@firebase/util" "^0.1.0"
+      faye-websocket "0.9.3"
+  
+  "@firebase/firestore@0.1.0":
+    version "0.1.0"
+    resolved "https://registry.yarnpkg.com/@firebase/firestore/-/firestore-0.1.0.tgz#6e42655708b8a528f89461d56154c2a124bc06b6"
+    dependencies:
+      "@firebase/webchannel-wrapper" "^0.2.2"
+  
+  "@firebase/messaging@0.1.0":
+    version "0.1.0"
+    resolved "https://registry.yarnpkg.com/@firebase/messaging/-/messaging-0.1.0.tgz#d43acaf1ff8588d25fa8afab13204951f88a3b48"
+    dependencies:
+      "@firebase/util" "^0.1.0"
+  
+  "@firebase/polyfill@0.1.0":
+    version "0.1.0"
+    resolved "https://registry.yarnpkg.com/@firebase/polyfill/-/polyfill-0.1.0.tgz#1c38e809f64eb7e73d1d2c26441da3260f31171f"
+    dependencies:
+      promise-polyfill "^6.0.2"
+  
+  "@firebase/storage@0.1.0":
+    version "0.1.0"
+    resolved "https://registry.yarnpkg.com/@firebase/storage/-/storage-0.1.0.tgz#257750c984aad433531f4e65744227407fed960e"
+  
+  "@firebase/util@^0.1.0":
+    version "0.1.0"
+    resolved "https://registry.yarnpkg.com/@firebase/util/-/util-0.1.0.tgz#c67d92f7d1b3365bfd31e0795dbbffdaf6457dc3"
+  
+  "@firebase/webchannel-wrapper@^0.2.2":
+    version "0.2.2"
+    resolved "https://registry.yarnpkg.com/@firebase/webchannel-wrapper/-/webchannel-wrapper-0.2.2.tgz#5fb89db77b63ef59378599913d38e28cc4291290"
   
   "@segment/loosely-validate-event@^1.1.2":
     version "1.1.2"
@@ -2094,6 +2142,10 @@ Lockfile:
     version "3.4.0"
     resolved "https://registry.yarnpkg.com/diff/-/diff-3.4.0.tgz#b1d85507daf3964828de54b37d0d73ba67dda56c"
   
+  dom-storage@^2.0.2:
+    version "2.0.2"
+    resolved "https://registry.yarnpkg.com/dom-storage/-/dom-storage-2.0.2.tgz#ed17cbf68abd10e0aef8182713e297c5e4b500b0"
+  
   dom-walk@^0.1.0:
     version "0.1.1"
     resolved "https://registry.yarnpkg.com/dom-walk/-/dom-walk-0.1.1.tgz#672226dc74c8f799ad35307df936aba11acd6018"
@@ -2419,6 +2471,12 @@ Lockfile:
     version "2.0.6"
     resolved "https://registry.yarnpkg.com/fast-levenshtein/-/fast-levenshtein-2.0.6.tgz#3d8a5c66883a16a30ca8643e851f19baa7797917"
   
+  faye-websocket@0.9.3:
+    version "0.9.3"
+    resolved "https://registry.yarnpkg.com/faye-websocket/-/faye-websocket-0.9.3.tgz#482a505b0df0ae626b969866d3bd740cdb962e83"
+    dependencies:
+      websocket-driver ">=0.5.1"
+  
   fb-watchman@^1.8.0:
     version "1.9.2"
     resolved "https://registry.yarnpkg.com/fb-watchman/-/fb-watchman-1.9.2.tgz#a24cf47827f82d38fb59a69ad70b76e3b6ae7383"
@@ -2553,6 +2611,20 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/find-up/-/find-up-2.1.0.tgz#45d1b7e506c717ddd482775a2b77920a3c0c57a7"
     dependencies:
       locate-path "^2.0.0"
+  
+  firebase@^4.5.1:
+    version "4.5.1"
+    resolved "https://registry.yarnpkg.com/firebase/-/firebase-4.5.1.tgz#882365d350c9bbbe3fe0731343776963cedefd9d"
+    dependencies:
+      "@firebase/app" "0.1.0"
+      "@firebase/auth" "0.1.0"
+      "@firebase/database" "0.1.0"
+      "@firebase/firestore" "0.1.0"
+      "@firebase/messaging" "0.1.0"
+      "@firebase/polyfill" "0.1.0"
+      "@firebase/storage" "0.1.0"
+      dom-storage "^2.0.2"
+      xmlhttprequest "^1.8.0"
   
   flush-write-stream@^1.0.0:
     version "1.0.2"
@@ -3068,6 +3140,10 @@ Lockfile:
     dependencies:
       inherits "~2.0.1"
       statuses "1"
+  
+  http-parser-js@>=0.4.0:
+    version "0.4.9"
+    resolved "https://registry.yarnpkg.com/http-parser-js/-/http-parser-js-0.4.9.tgz#ea1a04fb64adff0242e9974f297dd4c3cad271e1"
   
   http-proxy-agent@1, http-proxy-agent@^1.0.0:
     version "1.0.0"
@@ -5394,6 +5470,10 @@ Lockfile:
     version "1.0.1"
     resolved "https://registry.yarnpkg.com/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
   
+  promise-polyfill@^6.0.2:
+    version "6.0.2"
+    resolved "https://registry.yarnpkg.com/promise-polyfill/-/promise-polyfill-6.0.2.tgz#d9c86d3dc4dc2df9016e88946defd69b49b41162"
+  
   promise-retry@^1.1.1:
     version "1.1.1"
     resolved "https://registry.yarnpkg.com/promise-retry/-/promise-retry-1.1.1.tgz#6739e968e3051da20ce6497fb2b50f6911df3d6d"
@@ -7218,6 +7298,17 @@ Lockfile:
     version "4.0.2"
     resolved "https://registry.yarnpkg.com/webidl-conversions/-/webidl-conversions-4.0.2.tgz#a855980b1f0b6b359ba1d5d9fb39ae941faa63ad"
   
+  websocket-driver@>=0.5.1:
+    version "0.7.0"
+    resolved "https://registry.yarnpkg.com/websocket-driver/-/websocket-driver-0.7.0.tgz#0caf9d2d755d93aee049d4bdd0d3fe2cca2a24eb"
+    dependencies:
+      http-parser-js ">=0.4.0"
+      websocket-extensions ">=0.1.1"
+  
+  websocket-extensions@>=0.1.1:
+    version "0.1.2"
+    resolved "https://registry.yarnpkg.com/websocket-extensions/-/websocket-extensions-0.1.2.tgz#0e18781de629a18308ce1481650f67ffa2693a5d"
+  
   "websql@https://github.com/expo/node-websql/archive/18.0.0.tar.gz":
     version "0.4.4"
     resolved "https://github.com/expo/node-websql/archive/18.0.0.tar.gz#39b12a08b0180495de1412d8a64a529e21ad554e"
@@ -7496,6 +7587,10 @@ Lockfile:
   xmldom@0.1.x, xmldom@^0.1.27:
     version "0.1.27"
     resolved "https://registry.yarnpkg.com/xmldom/-/xmldom-0.1.27.tgz#d501f97b3bdb403af8ef9ecc20573187aadac0e9"
+  
+  xmlhttprequest@^1.8.0:
+    version "1.8.0"
+    resolved "https://registry.yarnpkg.com/xmlhttprequest/-/xmlhttprequest-1.8.0.tgz#67fe075c5c24fef39f9d65f5f7b7fe75171968fc"
   
   xpipe@^1.0.5:
     version "1.0.5"

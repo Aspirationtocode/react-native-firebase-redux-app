@@ -29,7 +29,9 @@
     "react-native-ui-kitten": "^2.0.1",
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
-    "redux-thunk": "^2.2.0"
+    "redux-thunk": "^2.2.0",
+    "uniq-id": "^1.0.0",
+    "uniqid": "^4.1.1"
   },
   "repository": "https://github.com/Aspirationtocode/react-native-firebase-redux-app.git",
   "author": "Aspirationtocode <aspiretocode@gmail.com>",

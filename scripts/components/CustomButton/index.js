@@ -28,8 +28,12 @@ class CustomButton extends Component {
 		super();
 	}
 	render() {
-		const { text, type } = this.props;
-		return <RkButton rkType={type}>{text}</RkButton>;
+		const { text, type, handlePress } = this.props;
+		return (
+			<RkButton onPress={handlePress} rkType={type}>
+				{text}
+			</RkButton>
+		);
 	}
 }
 

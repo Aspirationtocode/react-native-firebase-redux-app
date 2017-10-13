@@ -24,7 +24,8 @@ class CustomTextInput extends Component {
 		this.handleChange = this.handleChange.bind(this);
 	}
 	handleChange(value) {
-		console.log(value);
+		const { handleChange } = this.props;
+		handleChange(value);
 	}
 	render() {
 		const { placeholder, type } = this.props;

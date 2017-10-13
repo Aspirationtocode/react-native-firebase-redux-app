@@ -1,4 +1,10 @@
-import { START_FETCH_TODOS, FINISH_FETCH_TODOS } from '../constants';
+import {
+	START_FETCH_TODOS,
+	FINISH_FETCH_TODOS,
+	ADD_TODO,
+	ERROR_FETCH_TODOS
+} from '../constants';
+import database from '../db';
 
 const initialState = {
 	fetched: false,
@@ -18,7 +24,23 @@ const todoListReducer = (state = initialState, action) => {
 			return Object.assign({}, state, {
 				fetched: true,
 				fetching: false,
-				data: action.payload
+				data: action.payload,
+				error: null
+			});
+		}
+		case ERROR_FETCH_TODOS: {
+			return Object.assign({}, state, {
+				fetched: false,
+				fetching: false,
+				error: action.payload
+			});
+		}
+		case ADD_TODO: {
+			const newTodos = [...state.data, action.payload];
+			database.ref('todos/').set(newTodos);
+			return Object.assign({}, state, {
+				data: newTodos,
+				error: null
 			});
 		}
 		default: {
